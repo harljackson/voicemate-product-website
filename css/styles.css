@@ -1,0 +1,391 @@
+/* styles.css */
+
+/* nav */
+#nav-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgb(4, 9, 19);
+    z-index: 1;
+  }
+  
+  nav ul {
+    list-style: none;
+    margin: 10;
+    padding: 0;
+  }
+  
+  nav li {
+    display: flex;
+    justify-content: left;
+    margin-right: 10px;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: rgb(208, 208, 208);
+    letter-spacing: 3px;
+    margin: 2px; 
+  
+  }
+  
+  /* Media queries */
+  
+  /* header query */
+  @media (max-width: 600px) {
+    .quality-container {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .quality-image {
+      margin-right: 0;
+      margin-bottom: 15px; 
+    }
+  }
+  
+  /* product demo */
+  @media (max-width: 768px) {
+    #video-section {
+      padding: 40px 15px;
+    }
+  
+    #video-section h3 {
+      font-size: 1.8em;
+    }
+  
+    #video-section p {
+      font-size: 1em;
+    }
+  }
+  
+  /* cost section media queries*/
+  
+  @media (max-width: 768px) {
+    #cost-section {
+      padding: 40px 15px;
+    }
+  
+    #cost-section h3 {
+      font-size: 2em;
+    }
+  
+    #cost-section h4 {
+      font-size: 1.6em;
+    }
+  
+    #cost-section p {
+      font-size: 1.1em;
+    }
+  
+    #cost-section ul li {
+      font-size: 1em;
+    }
+  }
+  
+  /* form section media queries */
+  
+  @media (max-width: 600px) {
+    #form-section {
+      padding: 40px 15px;
+    }
+  
+    #email, #submit {
+      font-size: 1em;
+      padding: 12px;
+    }
+  }
+  
+  /* voicemate heading */
+  #main-heading{
+    font-size: 50px;
+    font-weight: 900;
+    text-align: center;
+    letter-spacing: 20px;
+    text-transform: uppercase;
+    margin: 50px;
+    padding: 110px;
+  }
+  
+  
+  /* body */
+  body {
+    font-family: Rubik, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e8e7e7;
+    font-size: 17px;
+    height: 100vh; 
+    color: rgb(220, 220, 220);
+  
+    /*background image */
+    background-image: url("https://coolbackgrounds.io/images/backgrounds/index/compute-ea4c57a4.png");
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-attachment: fixed;
+  }
+  
+  /* body before for background */
+  body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 650%;
+    background-color: rgba(0, 0, 0, 0.5); 
+    z-index: -1; 
+  }
+  
+  
+  
+  /* general container styles */
+  .quality-container,
+  .easy-to-use-container,
+  .best-seller-container {
+    display: flex;
+    align-items: center; 
+    margin-bottom: 20px; 
+    flex-direction: column; 
+    width: 50%;
+    margin: 50px;
+    margin-right: auto;
+    margin-left: auto;
+    line-height: 2;
+  }
+  
+  /* image styles */
+  .header-image-quality {
+    max-width: 150px; 
+    height: auto;
+    margin: 10px;
+  }
+  
+  /* content within containers */
+  .quality-container p,
+  .easy-to-use-container p,
+  .best-seller-container p {
+    margin: 0;
+  }
+  
+  /* content container padding */
+  .quality-content,
+  .easy-to-use-content,
+  .best-seller-content {
+    display: flex;
+    align-items: center; 
+    flex-direction: row; 
+  }
+  
+  
+  #home {
+    font-size: 2rem;
+    margin-bottom: 25px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  
+  /* video demo styles */
+  #video-section{
+    padding: 40px 30px 60px;
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    max-width: 780px;
+    margin: 10px auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(1, 101, 104, 0.5);
+  }
+  
+  /* video demo heading styles */
+  
+  #video-section h3 {
+    font-size: 2rem;
+    margin-bottom: 25px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+  }
+  
+  /* desc styles video */
+  
+  #video-section p {
+    font-size: 17px;
+    margin-bottom: 35px;
+    line-height: 1.5;
+  }
+  
+  /*video container styles */
+  
+  .video-container{
+    position: relative;
+    height: 0;
+    overflow: hidden;
+    border-radius: 10px;
+    max-width: 100%;
+    padding-bottom: 56.25%;
+  }
+  
+  /* iframe */
+  .video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: none;
+    width: 100%;
+    height: 100%;
+  }
+  
+  
+  /* cost section styles */
+  
+  #cost-section {
+    padding: 50px 15px;
+    text-align: center;
+    margin: 0 auto;
+    border-radius: 10px;
+    max-width: 1000px;
+    box-shadow: 0px 4px 10px rgba(1, 101, 104, 0.5);
+    background-color: rgba(0, 238, 255, 0.241); 
+  }
+  
+  /* cost section heading */
+  #cost-section h3 {
+    font-size: 2rem;
+    margin-bottom: 25px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+  }
+  
+  /* plans styles */
+  #cost-section > div {
+    padding: 20px;
+    margin-bottom: 25px;
+  }
+  
+  /* plan selection styles */
+  #cost-section h4 {
+    font-size: 1.4em;
+    margin-bottom: 25px;
+  }
+  
+  /* prices of plans */
+  #cost-section p {
+    font-size: 1.1em;
+    margin-bottom: 25px;
+    letter-spacing: 3;
+    font-weight: bold;
+    font-style: italic;
+  }
+  
+  /* features of plans */
+  #cost-section ul {
+    list-style-type: none;
+    margin-bottom: 20px;
+    letter-spacing: 1;
+  }
+  
+  #cost-section ul li {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+    padding-left: 25px;
+    position: relative;
+  }
+  
+  #cost-section ul li:before {
+    content: "\2713"; /* tick icon for ul li*/
+    color: #000000;
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+  
+  /* purchase button */
+  .purchase-button {
+    background-color: #4b6b53;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: bold;
+  }
+  
+  .purchase-button:hover {
+    background-color: #b6b6b6;
+    color: #000;
+  }
+  
+  /* form section */
+  #form-section {
+    padding: 60px 20px;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 500px;
+  }
+  
+  #form-section h3 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    font-weight: 600;
+    text-align: center;
+    letter-spacing: 1.5;
+    text-transform: uppercase;
+  }
+  
+  /* form styling */
+  #form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; 
+  }
+  
+  /* input email styles */
+  #email {
+    padding: 3px;
+    font-size: 1em;
+    width: 100%;
+  } 
+  
+  
+  /* submit button styles */
+  #submit {
+    padding: 7px 10px;
+    font-size: 0.8em;
+    background-color: #4b6b53;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    margin: 20;
+  }
+  
+  #submit:hover {
+    background-color: #b6b6b6;
+    color: #000;
+  }
+  
+  /* section spacing */
+  section {
+    margin-bottom: 250px;
+  }
+  
+  #video-section {
+    margin-bottom: 250px;
+  }
+  
+  #cost-section {
+    margin-bottom: 250px;
+  }
+  
+  
+  
+  
+  
+  
+  
+  
